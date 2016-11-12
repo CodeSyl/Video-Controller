@@ -1,0 +1,85 @@
+body{
+	background-color: black;
+}
+a:link , a:visited, a:hover, a:active{
+	text-decoration: none;
+}
+video::-webkit-media-controls {
+	display:none !important;
+}
+video:-webkit-full-screen{
+	z-index: 0 !important;
+	background-color: transparent;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	min-width: 0px;
+	max-width: none;
+	min-height: 0px;
+	max-height: none;
+	width: 100%;
+	height: 100%;
+	display: block;
+	transform: none;
+	margin: 0px !important;
+	flex: 0% !important;
+}
+progress[value]::-webkit-progress-value {
+	background-image:
+	-webkit-linear-gradient(-45deg, 
+	transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	rgba(0,0, 0, .1) 66%, transparent 66%),
+	-webkit-linear-gradient(top, 
+	rgba(255, 255, 255, .25), 
+	rgba(0, 0, 0, .25)),
+	-webkit-linear-gradient(left, #09c, #f44);
+	border-radius: 2px; 
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+#video-and-controller{
+	margin: auto;
+	padding-top: 7%;
+	text-align: center;
+}
+#btnPlay{
+	top: 210px;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	z-index: 10;
+}
+#progress_bar{
+	left: 0;
+	width: 630px;
+	bottom: 43px;
+	margin: auto;
+	position: relative;
+	z-index: 2247483647;
+}
+#progress-bar-full-screen{
+  width: 100%;
+  bottom: -877px;
+  margin: auto;
+  position: relative;
+  z-index: 2247483647;
+}
+#progress-bar:-moz-full-screen, #progress-bar:-ms-fullscreen, #progress-bar:-webkit-full-screen, #progress-bar:fullscreen {
+	position: fixed;
+}
+#progressBar{
+	width: 100%;
+	height: 36px;
+	margin-left: 0;
+	background: rgba(0, 0, 0, 0.360784);
+}
+#playProgBar{
+	margin-left: 16px;
+} 
+.rangeIn{
+	opacity: 0;
+	position: relative;
+	bottom: 43px;
+	height: 35px;
+	width: 100%;
+}
